@@ -18,7 +18,7 @@ variable "description" {
 variable "monEPGPol_dn" {
   default     = "default"
   description = "Relation to class monEPGPol.  The monitoring policy name for the EPG semantic scope."
-  type = string
+  type        = string
 }
 
 variable "name" {

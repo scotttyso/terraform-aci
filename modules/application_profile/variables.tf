@@ -39,7 +39,7 @@ variable "priority" {
   o level5 — Class 5 DSCP value.
   o level6 — Class 6 DSCP value.
   EOT
-  type        = set(string)
+  type        = string
 }
 
 variable "tags" {

@@ -30,7 +30,7 @@ variable "tags" {
 variable "monEPGPol_id" {
   default     = "default"
   description = "Relation to class monEPGPol.  The monitoring policy name for the EPG semantic scope."
-  type = string
+  type        = string
 }
 
 variable "vzFilter_ids" {
