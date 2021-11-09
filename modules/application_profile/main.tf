@@ -8,11 +8,11 @@
 #__________________________________________________________________
 
 resource "aci_application_profile" "app" {
-  # description                   = var.description
-  tenant_dn                 = var.tenant_dn
-  annotation                = var.tags
+  description               = var.description
+  tenant_dn                 = var.tenant
+  annotation                = var.annotations
   name                      = var.name
   name_alias                = var.alias
-  prio                      = var.priority
-  relation_fv_rs_ap_mon_pol = var.monEPGPol_id
+  prio                      = var.qos_class
+  relation_fv_rs_ap_mon_pol = var.monitoring_policy
 }

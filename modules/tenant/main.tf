@@ -8,10 +8,10 @@
 #__________________________________________________________________
 
 resource "aci_tenant" "tenant" {
-  annotation                    = var.tags
+  annotation                    = var.annotations
   description                   = var.description
   name                          = var.name
   name_alias                    = var.alias
-  relation_fv_rs_tenant_mon_pol = var.monEPGPol_dn
-  relation_fv_rs_tn_deny_rule   = var.vzFilter_dn_list
+  relation_fv_rs_tenant_mon_pol = var.monitoring_policy
+  # relation_fv_rs_tn_deny_rule   = var.vzFilter_dn_list
 }
