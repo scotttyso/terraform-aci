@@ -36,17 +36,17 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [aci_tenant.tenant](https://registry.terraform.io/providers/ciscodevnet/aci/latest/docs/resources/tenant) | resource |
+| [aci_application_epg.tenant](https://registry.terraform.io/providers/ciscodevnet/aci/latest/docs/resources/application_epg) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_alias"></a> [alias](#input\_alias) | A changeable name for a given object. While the name of an object, once created, can’t be changed, the Alias is a field that can be changed. | `string` | `""` | no |
+| <a name="input_annotations"></a> [annotations](#input\_annotations) | A search keyword or term that is assigned to the Tenant. Tags allow you to group multiple objects by descriptive names. You can assign the same tag name to multiple objects and you can assign one or more tag names to a single object. | `string` | `""` | no |
 | <a name="input_description"></a> [description](#input\_description) | Description for the Resource. | `string` | `""` | no |
-| <a name="input_monEPGPol_id"></a> [monEPGPol\_id](#input\_monEPGPol\_id) | Relation to class monEPGPol.  The monitoring policy name for the EPG semantic scope. | `string` | `"default"` | no |
+| <a name="input_monitoring_policy"></a> [monitoring\_policy](#input\_monitoring\_policy) | Relation to class monEPGPol.  The monitoring policy name for the EPG semantic scope. | `string` | `"default"` | no |
 | <a name="input_name"></a> [name](#input\_name) | Name for the Resource. | `string` | `"tenant"` | no |
-| <a name="input_tags"></a> [tags](#input\_tags) | A search keyword or term that is assigned to the Tenant. Tags allow you to group multiple objects by descriptive names. You can assign the same tag name to multiple objects and you can assign one or more tag names to a single object. | `string` | `""` | no |
 | <a name="input_vzFilter_ids"></a> [vzFilter\_ids](#input\_vzFilter\_ids) | List of Tag Attributes to Assign to the Policy. | `set(string)` | `[]` | no |
 
 ## Outputs
